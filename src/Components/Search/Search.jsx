@@ -28,7 +28,10 @@ function Search() {
   };
   return (
     <Container>
-      <Input onChange={handleChange}></Input>
+      <Input
+        onChange={handleChange}
+        placeholder="Paste your address here!"
+      ></Input>
 
       <CheckerInfo>
         <Anchor
