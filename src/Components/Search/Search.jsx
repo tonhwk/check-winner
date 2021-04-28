@@ -3,6 +3,7 @@ import {
   Input,
   Loser,
   Winner,
+  Try,
   Container,
   CheckerInfo,
   Anchor,
@@ -40,7 +41,13 @@ function Search() {
         >
           Check!
         </Anchor>
-        {found ? <Winner>Winner!</Winner> : <Loser>Not so lucky...</Loser>}
+        {found ? (
+          <Winner>Winner!</Winner>
+        ) : found === false ? (
+          <Loser>Not so lucky...</Loser>
+        ) : (
+          <Try>Try it!</Try>
+        )}
       </CheckerInfo>
     </Container>
   );

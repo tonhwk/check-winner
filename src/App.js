@@ -7,7 +7,7 @@ import WinnersContext from "./Context/WinnersContext";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [found, setFound] = useState(false);
+  const [found, setFound] = useState("");
   return (
     <div>
       <WinnersContext.Provider

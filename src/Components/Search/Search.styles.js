@@ -17,6 +17,12 @@ export const Loser = styled.p`
   margin-left: 2rem;
 `;
 
+export const Try = styled.p`
+  color: grey;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+`;
+
 export const Container = styled.div`
   margin: 6rem;
 `;
